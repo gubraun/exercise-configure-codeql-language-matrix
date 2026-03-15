@@ -16,10 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        include:
-          - language:
-            - cpp
-            - java
+        languages: [cpp, java]
         
     steps:
       - name: Checkout repository
